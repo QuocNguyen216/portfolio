@@ -1,6 +1,6 @@
 .project{
     float: left;
-    background-image: url("/images/project.jpg");
+    background-image: url("./images/project.jpg");
     min-height: 600px;
     min-width: 100%;
     background-attachment: fixed;

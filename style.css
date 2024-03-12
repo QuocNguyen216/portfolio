@@ -61,7 +61,7 @@ nav ul li:not(.leftName) a:hover{
 }
 .behind{
     float: left;
-    background-image: url("images/background.png");
+    background-image: url("./images/background.png");
     min-height: 800px;
     background-attachment: fixed;
     background-position: center;

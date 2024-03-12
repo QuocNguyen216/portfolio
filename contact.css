@@ -1,6 +1,6 @@
 .contact{
     float: left;
-    background-image: url("/images/contactme.jpg");
+    background-image: url("./images/contactme.jpg");
     min-height: 500px;
     min-width: 100%;
     background-attachment: fixed;
