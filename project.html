@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel = "stylesheet" href = "style.css"/>
+    <link rel = "stylesheet" href = "project.css"/>
+</head>
+<body>
+    <nav style  = "display: none;" id = "computer">   
+        <ul>
+            <li class = "leftName"><a href = "index.html">Quoc Nguyen</a></li>
+            <li><a  href = "index.html">About</a></li>
+            <li><a class = "active" href = "project.html">Project</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav style  = "display: none;" id = "mobile">   
+        <ul>
+            <li class = "leftName"><a href = "index.html">Quoc Nguyen</a></li>
+            <li>
+                <button id = "burger" onclick = "burgerAnimation()" class="hamburger hamburger--vortex" type="button">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <script>
+                    function burgerAnimation(){
+                        if(document.getElementById("burger").classList.contains("is-active"))
+                        {
+                            document.getElementById("burger").classList.remove("is-active");
+                            document.getElementById("dropdown").classList.remove("dropdown");
+                            document.getElementById("dropdown").classList.add("dropdownoff");
+                        }
+                        else
+                        {
+                            document.getElementById("dropdown").classList.remove("dropdownoff");
+                            document.getElementById("dropdown").classList.add("dropdown");
+                            document.getElementById("burger").classList.add("is-active")
+                        }
+                            
+                    }
+                </script>
+            </li>
+        </ul>
+    </nav>
+    <div class = "dropdownoff" id = "dropdown">
+        <ul>
+            <li><a href = "index.html">About</a></li>
+            <li><a href = "project.html">Project</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class = "project">
+        <h1>Projects</h1>
+    </div>
+
+    <div class = "section">
+        <h1><img src = "./images/maze.png">  Maze solver</h1>
+        <p><a target="_blank" href = "https://quocnguyen216.github.io/mazeSolver/"><img src = "./images/maze.png"></a>Click the icon to open the web application</p>
+        <p>A maze-solving simulation with an integrated database system. (<b>ReactJS, ExpressJS, MongoDB, NodeJS</b>)</p>
+        <p><b>Demos</b>:</p>
+        <ul class = "horizontal">
+            <li><img src = "images/dfs.gif"></li>
+            <li><img src = "images/dijkstra.gif"></li>
+        </ul>
+        <ul>
+            <li>Implemented web app GUI (<b>ReactJS</b>) that simulates the maze-solving procedure of <b>Dijkstra</b> and <b>DFS</b> algorithms.</li>
+            <li>Implemented a <b>queue</b> and <b>stack</b> data structures for the array to support <b>backtracking</b> and <b>tracing</b> of the algorithms.</li>
+            <li>Integrated a randomized maze-generating algorithm using <b>BFS with flexible sizes</b> on a <b>Dynamic 2D array.</b></li>
+            <li>Deployed <b>MongoDB</b> cloud database, <b>ExpressJS’s</b> back-end Render server, and <b>ReactJS’s</b> front-end GitHub server.</li>
+            <li>Designed <b>REST apis</b> for communication between the GUI and the servers for database modification.</li>
+        </ul>
+    </div>
+    <div class = "section">
+        <h1><img style = "border-radius: 10px;"  src = "./images/racecar.webp">  Race car</h1>
+        <p>A GUI that transfers computer input to motor input via wifi. <b>(Python, Pygame, Socket, Adafruit, BeagleBone Black)</b></p>
+        <p><b>Demos</b>:</p>
+        <ul class = "horizontal">
+            <li><img src = "images/cargui.png"></li>
+            <li><img src = "images/racecardemo.gif"></li>
+        </ul>
+        <ul>
+            <li>Implemented a <b>GUI</b> to track <b>keyboard inputs</b> and report the <b>car’s motor speed, and turn angles</b> using <b>Pygame</b>.</li>
+            <li>Integrated and designed a responsive system to control the car via Wifi using <b>Pygame and Socket</b>.</li>
+            <li>Converted hardware values and human metrics for <b>GUI readability and hardware controlling.</b></li>
+        </ul>
+    </div>
+    <div class = "section">
+        <h1><img style = "border-radius: 10px;" src = "./images/taskcontroller.png">  Task controller</h1>
+        <p>Controlling process execution of a simulated OS environment.<b>(C, low-level programming)</b>.</p>
+        <p><b>Demos</b>:</p>
+        <ul class = "horizontal">
+            <li><img style = "border-radius: 10px;" src = "images/taskcontroller.png"></li>
+            <li><img src = "images/dijkstra.gif"></li>
+        </ul>
+        <ul>
+            <li>Implemented and synchronized <b>multiple queues</b> to store process data using a <b>linked list structure.</b></li>
+            <li>Transferred <b>user inputs to process signals</b> and guaranteed the <b>delivery of signals</b> to processes.</li>
+            <li>Synchronized <b>signal communication</b> between processes and queues to avoid <b>race conditions</b>.</li>
+        </ul>
+    </div>
+    <div style = "float:left; width: 100%;background-color: #fc9714; text-align: center;">
+        <ul style = "list-style: none;">
+            <li class = "bottom" style = " padding: 10px; font-size: 1.5em;"><a style = "text-decoration: none; color: white;" href = "index.html">About</a></li>
+            <li class = "bottom" style = " padding: 10px; font-size: 1.5em;"><a style = "text-decoration: none; color: white;" href = "project.html">Project</a></li>
+            <li class = "bottom" style = " padding: 10px; font-size: 1.5em;"><a style = "text-decoration: none; color: white;"href = "contact.html">Contact</a></li>
+        </ul>
+        <footer>
+            <p style="text-align: left; padding: 10px;">© 2024 by Quoc Nguyen</p>
+        </footer>
+    </div>
+    <script src = "index.js"></script>
+</body>
+</html>

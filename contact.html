@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel = "stylesheet" href = "style.css" />
+    <link rel = "stylesheet" href = "contact.css" />
+</head>
+<body>
+    <nav  style  = "display: none;"id = "computer">   
+        <ul>
+            <li class = "leftName"><a href = "index.html">Quoc Nguyen</a></li>
+            <li><a  href = "index.html">About</a></li>
+            <li><a href = "project.html">Project</a></li>
+            <li><a class = "active" href = "contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav style  = "display: none;" id = "mobile">   
+        <ul>
+            <li class = "leftName"><a href = "index.html">Quoc Nguyen</a></li>
+            <li>
+                <button id = "burger" onclick = "burgerAnimation()" class="hamburger hamburger--vortex" type="button">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <script>
+                    function burgerAnimation(){
+                        if(document.getElementById("burger").classList.contains("is-active"))
+                        {
+                            document.getElementById("burger").classList.remove("is-active");
+                            document.getElementById("dropdown").classList.remove("dropdown");
+                            document.getElementById("dropdown").classList.add("dropdownoff");
+                        }
+                        else
+                        {
+                            document.getElementById("dropdown").classList.remove("dropdownoff");
+                            document.getElementById("dropdown").classList.add("dropdown");
+                            document.getElementById("burger").classList.add("is-active")
+                        }
+                            
+                    }
+                </script>
+            </li>
+        </ul>
+    </nav>
+    <div class = "dropdownoff" id = "dropdown">
+        <ul>
+            <li><a href = "index.html">About</a></li>
+            <li><a href = "project.html">Project</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class = "contact" id = "contact">
+        <div class = "contactMe">
+            <h1>Contact Information</h1>
+            <p>
+                <b>Email: </b><a href="mailto:quoctn2901@gmail.com"> quoctn2901@gmail.com</a>
+            </p>
+            <p>
+                <b>Phone: +1 571-922-4578</b>
+            </p>
+        </div>
+    </div>
+    <div class = "contactForm" id = "contactForm">
+        <label>Name: </label><br>
+        <input type="text" id="name" placeholder="Enter your name"><br>
+    
+        <label>Phone: </label><br>
+        <input type="text" id="phone" placeholder="Enter your phone number"><br>
+
+        <label>Email: </label><br>
+        <input type="text" id="email" placeholder="Enter your email"><br>
+    
+        <label>Prefer Contact Method</label><br>
+        <select id="contactMed">
+            <option value="mail">Mail</option>
+            <option value="phone">Phone</option>
+        </select><br>
+    
+        <label>Message</label><br>
+        <textarea id="message" placeholder="Enter your message" style="height:200px; width: 100%"></textarea><br>
+        
+        <button onclick="sendEmail()">Submit</button>
+    </div>
+    <div style = "background-color: #fc9714; text-align: center;">
+        <ul style = "list-style: none;">
+            <li class = "bottom" style = " padding: 10px; font-size: 1.5em;"><a style = "text-decoration: none; color: white;" href = "index.html">About</a></li>
+            <li class = "bottom" style = " padding: 10px; font-size: 1.5em;"><a style = "text-decoration: none; color: white;" href = "project.html">Project</a></li>
+            <li class = "bottom" style = " padding: 10px; font-size: 1.5em;"><a style = "text-decoration: none; color: white;"href = "contact.html">Contact</a></li>
+        </ul>
+        <footer>
+            <p style="text-align: left; padding: 10px;">© 2024 by Quoc Nguyen</p>
+        </footer>
+    </div>
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        emailjs.init('g7LN03g6_L_0KIrlr')
+    </script>
+    <script src = "index.js"></script>
+</body>
+</html>

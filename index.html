@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel = "stylesheet" href = "style.css" />
+</head>
+<body>
+    <nav style  = "display: none;" id = "computer">   
+        <ul>
+            <li class = "leftName"><a href = "index.html">Quoc Nguyen</a></li>
+            <li><a class = "active" href = "index.html">About</a></li>
+            <li><a href = "project.html">Project</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav style  = "display: none;" id = "mobile">   
+        <ul>
+            <li class = "leftName"><a href = "index.html">Quoc Nguyen</a></li>
+            <li>
+                <button id = "burger" onclick = "burgerAnimation()" class="hamburger hamburger--vortex" type="button">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <script>
+                    function burgerAnimation(){
+                        if(document.getElementById("burger").classList.contains("is-active"))
+                        {
+                            document.getElementById("burger").classList.remove("is-active");
+                            document.getElementById("dropdown").classList.remove("dropdown");
+                            document.getElementById("dropdown").classList.add("dropdownoff");
+                        }
+                        else
+                        {
+                            document.getElementById("dropdown").classList.remove("dropdownoff");
+                            document.getElementById("dropdown").classList.add("dropdown");
+                            document.getElementById("burger").classList.add("is-active")
+                        }
+                            
+                    }
+                </script>
+            </li>
+        </ul>
+    </nav>
+    <div class = "dropdownoff" id = "dropdown">
+        <ul>
+            <li><a href = "index.html">About</a></li>
+            <li><a href = "project.html">Project</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="behind">
+        <div class = "aboutMe">
+            <h1>Introduction</h1>
+            <div>
+                <img src = "/images/pictureofme.png" class ="mypic">
+                <p>
+                    Hi there! I'm Quoc Tuan Nguyen, a Computer Science enthusiast currently diving deep into my studies at George Mason University. My journey has been quite the adventure, marked by a perfect 4.0 GPA, scholarships recognizing my hard work, and a lot of learning along the way. When I'm not hitting the books, you can find me assisting fellow students as an Undergraduate Teaching Assistant or tinkering with code on various projects. From data structures to full-stack development, I've dipped my toes in many waters and am always on the lookout for the next exciting challenge. Let's connect and create something amazing together!
+                </p>
+                <p><b>You can find me here:</b></p>        
+            </div>
+            <ul class = "icons">
+                <li><a href = "https://www.linkedin.com/in/quoc-nguyen-711069267/" target="_blank"><img src = "/images/linkedin.jpeg"></a></li>
+                <li><a href = "https://github.com/QuocNguyen216" target="_blank"><img src = "/images/github.png"></a></li>  
+                <li><a href = "https://app.joinhandshake.com/stu/users/36792990" target="_blank"><img src = "/images/handshake.jpeg"></a></li>  
+            </ul>
+        </div>
+    </div>
+    <div class = "section">
+        <h1>Education</h1>
+        <div class = "cardHide">
+            <a href = "https://www.nvcc.edu/" target="_blank"><img src = "/images/nova.jpeg"></a><br>
+            <p>
+                <b>Northern Virginia Community College</b>, Annandale, VA<br>
+                Associate of Science in Computer Science<br>
+                From: August 2019<br>
+                Graduated: December 2021<br>
+                <b>GPA: 4.0</b>
+            </p>
+            <p><b>Archivements:</b></p>
+            <ul>
+                <li><b>Dean’s list fall 2019, 2020, and 2021</b></li>
+            </ul>
+        </div>
+
+    
+
+        <div class = "cardHide">
+            <a href = "https://www.gmu.edu/" target="_blank"><img src = "/images/gmu.png"></a><br>
+            <p>
+                <b>George Mason University</b>, Fairfax, VA<br>
+                Bachelor of Science in Computer Science<br>
+                From: January 2022<br>
+                Expected Graduation: May 2024<br>
+                <b>Current GPA: 4.0</b>
+            </p>
+            <p><b>Archivements:</b></p>
+            <ul>
+                <li><b>Dean’s list fall 2019, 2020, and 2021</b></li>
+                <li><b>$25.000 Merit-Based Scholarship (Spring 2022 – Spring 2024)</b></li>
+            </ul>
+        </div>
+
+
+        <div class = "cardHide">
+            <p><b>Courses taken:</b></p>
+            <ul>
+                <li><b>Secure Programming (CS 468)</b></li>
+                <li><b>Algorithm Analysis (CS 483)</b></li>
+                <li><b>Database Concepts (CS 450)</b></li>
+                <li><b>Computer Networking (CS 455)</b></li>
+                <li><b>Mobile App Development (CS 477)</b></li>
+                <li><b>Comparative Programming Languages (CS 463)</b></li>
+                <li><b>Data Structure (CS 310)</b></li>
+                <li><b>Computer Systems and Programming (CS 330)</b></li>
+                <li><b>Formal Methods and Models (CS 367)</b></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class = "section">
+        <h1>Experiences</h1>
+
+        <div class = "cardHide">
+            <a href = "https://www.gmu.edu/" target="_blank"><img src = "/images/gmu.png"></a><br>
+            <p>
+                <b>Undergraduate Teaching Assistant</b><br>
+                From: <b>August 2023</b><br>
+                To: <b>May 2024</b>
+            </p>
+            <p><b>Responsibilities:</b></p>
+            <ul>
+                <li>Guided other students in understanding <b>data structure properties</b> and <b>algorithm analysis</b></li>
+                <li>Monitored and answered questions on the class <b>Q&A forum</b> (Piazza).</li>
+                <li>Assisted the professors and GTA in <b>exam proctoring, office hours, and project testing</b>.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section">
+        <h1>Skills</h1>
+
+        <div class = "cardHide">
+            <p><b>Programming Languages:</b></p>
+            <ul>
+                <li class = "line"><img src = "./images/java.png"><b> Java</b></li>
+                <li class = "line"><img src = "./images/python.png"><b> Python</b></li>
+                <li class = "line"><img src = "./images/c++.png"><b> C++</b></li>
+                <li class = "line"><img src = "./images/javascript.png"><b> JavaScript</b></li>
+                <li class = "line"><img src = "./images/html.png">  <img src = "./images/css.png"><b> HTML/CSS</b></li>
+                <li class = "line"><img src = "./images/c.png"><b> C</b></li>
+                <li class = "line"><img src = "./images/csharp.png"><b> C#</b></li>
+            </ul>
+        </div>  
+
+        <div class = "cardHide">
+            <p><b>Familiar with:</b></p>
+            <ul>
+                <li class = "line"><img src = "./images/reactjs.png"><b> ReactJS</b></li>
+                <li class = "line"><img src = "./images/expressjs.png"><b> ExpressJS</b></li>
+                <li class = "line"><img src = "./images/nodejs.png"><b> NodeJS</b></li>
+                <li class = "line"><img src = "./images/mongodb.png"><b> MongoDB</b></li>
+                <li class = "line"><img src = "./images/vite.png"><b> Vite</b></li>
+                <li class = "line"><img src = "./images/npm.png"><b> NPM</b></li>
+                <li class = "line"><img src = "./images/mysql.png">  <img src = "./images/jdbc.png"><b> MySQL, JDBC</b></li>
+                <li class = "line"><img src = "./images/pythonsocket.png"><b> Python Socket Programming</b></li>
+            </ul>
+        </div>  
+
+        <div class = "cardHide">
+            <p><b>Tools used:</b></p>
+            <ul>
+                <li class = "line"><img src = "./images/eclipse.png"><b> Eclipse</b></li>
+                <li class = "line"><img src = "./images/VStudio.png"><b> Visual Studio</b></li>
+                <li class = "line"><img src = "./images/copilot.png"><b> Copilot</b></li>
+                <li class = "line"><img src = "./images/VScode.png"><b> VScode</b></li>
+                <li class = "line"><img src = "./images/git.png"><b> Git</b></li>
+                <li class = "line"><img src = "./images/unix.png"><b> Unix</b></li>
+                <li class = "line"><img src = "./images/cmd.png"><b> Window CMD prompt</b></li>
+                <li class = "line"><img src = "./images/openssl.png"><b> OpenSSL</b></li>
+            </ul>
+            <p><b>Other skills:</b></p>
+            <ul>
+                <li class = "line"><b> MERN full-stack dev</b></li>
+                <li class = "line"><b> Hardware programming</b></li>
+                <li class = "line"><b> Object oriented progamming</b></li>
+                <li class = "line"><b> Concurrency programming</b></li>
+                <li class = "line"><b> Network communication programming</b></li>
+                <li class = "line"><b> Secure programming (Public key cryptography)</b></li>
+            </ul>
+        </div>  
+    </div>
+    <div style = "float:left; width: 100%;background-color: #fc9714; text-align: center;">
+        <ul style = "list-style: none;">
+            <li class = "bottom" style = " padding: 10px; font-size: 1.5em;"><a style = "text-decoration: none; color: white;" href = "index.html">About</a></li>
+            <li class = "bottom" style = " padding: 10px; font-size: 1.5em;"><a style = "text-decoration: none; color: white;" href = "project.html">Project</a></li>
+            <li class = "bottom" style = " padding: 10px; font-size: 1.5em;"><a style = "text-decoration: none; color: white;"href = "contact.html">Contact</a></li>
+        </ul>
+        <footer>
+            <p style="text-align: left; padding: 10px;">© 2024 by Quoc Nguyen</p>
+        </footer>
+    </div>
+    <script src = "index.js"></script>
+
+</body>
+</html>

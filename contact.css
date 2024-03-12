@@ -1,0 +1,62 @@
+.contact{
+    float: left;
+    background-image: url("/images/contactme.jpg");
+    min-height: 500px;
+    min-width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.contactMe{
+    margin:200px;
+    color: #b47105;
+    border: #b47105 2px solid;
+    background-color: antiquewhite;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.contactMe p a{
+    color: #b47105;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contactForm{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 750px;
+    border-radius: 10px;
+    border:#b47105 2px solid;
+    background-color: #f5dfc0;
+    padding: 20px;
+    box-shadow: #b47105 3px 3px 10px;
+    font-weight: bold;
+    color: #b47105;
+    font-size:1.3em;
+}
+
+.contactForm button{
+    color: white;
+    font-weight: bold;
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgb(44, 235, 6);
+}
+
+.contactForm button:hover{
+    background-color: rgb(36, 173, 8);
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.contactForm button:active{
+    background-color: rgb(26, 117, 8);
+    cursor: pointer;
+}
+
