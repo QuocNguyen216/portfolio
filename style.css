@@ -49,8 +49,6 @@ nav ul li:not(.leftName) a:hover{
 
 .aboutMe{
     margin: 200px;
-    margin-left: 200px;
-    margin-right: 200px;
     min-width: fit-content;
     max-width: 100%;
     border: #b47105 2px solid;

@@ -1,5 +1,26 @@
 const computer = document.getElementById("computer");
 const mobile = document.getElementById("mobile");
+const aboutMe = document.querySelectorAll(".aboutMe");
+const contactMe = document.querySelectorAll(".contactMe");
+const project = document.querySelectorAll(".project h1");
+
+
+if(aboutMe[0]!= null)
+{
+  aboutMe[0].style.marginLeft = (document.body.clientWidth - aboutMe[0].clientWidth)/2 +"px";
+  aboutMe[0].style.marginRight = (document.body.clientWidth - aboutMe[0].clientWidth)/2 +"px";
+}
+if(contactMe[0]!= null)
+{
+  contactMe[0].style.marginLeft = (document.body.clientWidth - contactMe[0].clientWidth)/2 +"px";
+  contactMe[0].style.marginRight = (document.body.clientWidth - contactMe[0].clientWidth)/2 +"px";
+}
+if(project[0]!= null)
+{
+  project[0].style.marginLeft = (document.body.clientWidth - project[0].clientWidth)/2 +"px";
+  project[0].style.marginRight = (document.body.clientWidth - project[0].clientWidth)/2 +"px";
+}
+
 if(document.body.clientWidth < 900){
   mobile.style.display = "block";
   computer.style.display = "none";
@@ -106,10 +127,30 @@ window.addEventListener('resize', function() {
     item.style.marginLeft = (sectionWidth - currentWidth)/2 + "px";
   });
   if(contactForm != null)
+  {
+    console.log((document.body.clientWidth - contactForm.clientWidth)/2);
     contactForm.style.marginTop = (30 + contactPic.clientHeight) +"px";
+    contactForm.style.marginLeft = (document.body.clientWidth - 400)/2 +"px";
+    contactForm.style.marginRight = (document.body.clientWidth - 400)/2 +"px";
+  }
   if(document.body.clientWidth < 900){
     mobile.style.display = "block";
     computer.style.display = "none";
+    if(aboutMe[0]!= null)
+    {
+      aboutMe[0].style.marginLeft = (document.body.clientWidth - aboutMe[0].clientWidth)/2 +"px";
+      aboutMe[0].style.marginRight = (document.body.clientWidth - aboutMe[0].clientWidth)/2 +"px";
+    }
+    if(contactMe[0]!= null)
+    {
+      contactMe[0].style.marginLeft = (document.body.clientWidth - contactMe[0].clientWidth)/2 +"px";
+      contactMe[0].style.marginRight = (document.body.clientWidth - contactMe[0].clientWidth)/2 +"px";
+    }
+    if(project[0]!= null)
+    {
+      project[0].style.marginLeft = (document.body.clientWidth - project[0].clientWidth)/2 +"px";
+      project[0].style.marginRight = (document.body.clientWidth - project[0].clientWidth)/2 +"px";
+    }
   }
   else{
     computer.style.display = "block";
@@ -122,5 +163,9 @@ window.addEventListener('resize', function() {
 });
 
 if(contactForm != null)
-    contactForm.style.marginTop = (30 + contactPic.clientHeight) +"px";
+{
+  contactForm.style.marginTop = (30 + contactPic.clientHeight) +"px";
+  contactForm.style.marginLeft = (document.body.clientWidth - 400)/2 +"px";
+  contactForm.style.marginRight = (document.body.clientWidth - 400)/2 +"px";
+}
 
