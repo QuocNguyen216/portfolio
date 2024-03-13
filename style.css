@@ -123,24 +123,24 @@ nav ul li:not(.leftName) a:hover{
 }
 
 .cardShow{
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     height: fit-content;
     border: #b47105 2px solid;
     border-radius: 10px;
     box-shadow: #b47105 3px 3px 10px;
     padding: 20px;
     width: fit-content;
-    min-width: 400px;
     background-color: rgb(255, 255, 255);
     opacity: 1;
     transition: all 1s;
     filter: blur(0px);
     transform: translateX(0);
-    margin-left: 0px;
 }
 
 .cardHide{
     opacity: 0;
+    padding: 20px;
 }
 .section ul{
     list-style-type: none;
